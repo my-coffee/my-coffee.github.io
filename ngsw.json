@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1556081972014,
+  "timestamp": 1556083869900,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -42,7 +42,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "https:\\/\\/my-coffee-server\\.herokuapp\\.com\\/coffees"
+      ],
+      "strategy": "freshness",
+      "maxSize": 30,
+      "maxAge": 360000000,
+      "timeoutMs": 1000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "/icons/icon_144.png": "b39fc1ac395cea6245b6f2eb59e76d9fe11f5eec",
